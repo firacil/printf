@@ -9,7 +9,7 @@
 
 int my_str(va_list args, int count)
 {
-	char *s = va_arg(args, char*);
+	char *s = va_arg(args, char *);
 
 	while (*s != '\0')
 	{

@@ -19,6 +19,7 @@ int integer(va_list args, int pr)
 		pr += my_putc('-');
 		n = -n;
 
+
 		temp = n;
 	}
 

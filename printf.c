@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 
 	va_list args;
 
-	if (format == NULL)
+	if (!format[i] || (format[i + 1] == ' ' && format[i + 2]))
 		return (-1);
 
 	va_start(args, format);
