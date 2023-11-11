@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 int my_putc(char c);
-int my_puts(va_list lis);
+int my_puts(char *c);
 int _printf(const char *format, ...);
 
 #endif

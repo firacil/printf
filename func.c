@@ -12,25 +12,21 @@ int my_putc(char c)
 
 /**
  * my_puts - print string.
- * @lis: variadic.
+ * @c: index of char..
  * Return: index..
  */
 
-int my_puts(va_list lis)
+int my_puts(char *c)
 {
-	char *str;
 	int i;
 
-	str = va_arg(lis, char *);
-
-	if (str == NULL)
-		str = "(null)";
-	while (str[i])
+	if (c == NULL)
+		c = "(null)";
+	if (c)
 	{
-		my_putc(str[i]);
-		i++;
-	}
-
-	va_end(lis);
-	return (count_s);
+		for (i = 0; c[i] != '\0'; c++)
+		{
+			my_putc(c[i]);
+		}
+	return (i);
 }
