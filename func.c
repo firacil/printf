@@ -22,7 +22,7 @@ int my_puts(char *c)
 
 	if (c)
 	{
-		for (i = 0; c[i] != '\0'; c++)
+		for (i = 0; c[i] != '\0'; i++)
 		{
 			my_putc(c[i]);
 		}
