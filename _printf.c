@@ -8,7 +8,7 @@
 
 int _printf(const char *format, ...)
 {
-	int i, count_c, s_count;
+	unsigned int i, count_c, s_count;
 
 	va_list args;
 
