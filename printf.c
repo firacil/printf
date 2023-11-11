@@ -26,7 +26,7 @@ int _printf(const char *format, ...)
 		{
 			format++;
 			pr = selectr(format, args, pr);
-			format++;
+			pr++;
 		}
 	}
 	va_end(args);
