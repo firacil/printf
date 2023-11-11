@@ -39,9 +39,11 @@ int _printf(const char *format, ...)
 		else if (format[i] == '%' && format[i + 1] == '%')
 		{
 			my_putc('%');
+			count_c++;
 			i++;
+			continue;
 		}
-		count_c++;
+		count_c += 1;
 	}
 
 	va_end(args);
