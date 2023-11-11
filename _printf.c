@@ -40,7 +40,6 @@ int _printf(const char *format, ...)
 		{
 			my_putc('%');
 			i++;
-			continue;
 		}
 		count_c += 1;
 	}
