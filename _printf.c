@@ -15,9 +15,9 @@ int _printf(const char *format, ...)
 	va_start(args, format);
 
 	if (!format || (format[0] == '%' && !format[1]))
-		//return (-1);
+		return (-1);
 	if (format[0] == '%' && (format[1] == ' ' && !format[2]))
-		//return (-1);
+		return (-1);
 
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
@@ -25,7 +25,6 @@ int _printf(const char *format, ...)
 		{
 			my_putc(format[i]);
 		}
-
 		while (format[i] == '%')
 		{
 			if (format[i + 1] == 'c')
@@ -44,8 +43,8 @@ int _printf(const char *format, ...)
 				my_putc('%');
 				i++;
 			}
-			count_c += 1;
 		}
+		count_c++;
 	}
 	va_end(args);
 	return (count_c);
