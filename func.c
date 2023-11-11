@@ -12,8 +12,8 @@ int my_putc(char c)
 
 /**
  * my_puts - print string.
- * @c: string.
- * Return: bytes number counted.
+ * @lis: variadic.
+ * Return: index..
  */
 
 int my_puts(va_list lis)
@@ -31,5 +31,6 @@ int my_puts(va_list lis)
 		i++;
 	}
 
+	va_end(lis);
 	return (count_s);
 }
