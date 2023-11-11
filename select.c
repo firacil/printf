@@ -10,11 +10,14 @@
 
 int selectr(const char *format, va_list args, int pr)
 {
+	int count;
+
 	switch (*format)
 	{
 		case 'd':
 		case 'i':
 			pr = integer(args, pr);
+			count++;
 			break;
 
 		case 'c':
