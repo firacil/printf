@@ -25,7 +25,7 @@ int _printf(const char *format, ...)
 		{
 			my_putc(format[i]);
 		}
-		if (format[i + 1] == 'c')
+		else if (format[i + 1] == 'c')
 		{
 			my_putc(va_arg(args, int));
 			i++;
@@ -36,10 +36,9 @@ int _printf(const char *format, ...)
 			i++;
 			count_c += (s_count - 1);
 		}
-		else if (format[i] == '%' && format[i + 1] == '%')
+		else if (format[i + 1] == '%')
 		{
 			my_putc('%');
-			count_c++;
 			i++;
 			continue;
 		}
