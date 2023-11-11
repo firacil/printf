@@ -10,7 +10,7 @@
 
 int selectr(const char *format, va_list args, int pr)
 {
-	int count;
+	int count = 0;
 
 	switch (*format)
 	{
