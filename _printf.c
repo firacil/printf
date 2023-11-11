@@ -20,19 +20,19 @@ int _printf(const char *format, ...)
 		{
 			my_putc(format[i]);
 		}
-		else if (format[i + 1] == 'c')
+		else if (format[i] == '%' && format[i + 1] == 'c')
 		{
 			my_putc(va_arg(args, int));
 			i++;
 		}
-		else if (format[i + 1] == 's')
+		else if (format[i] == '%' && format[i + 1] == 's')
 		{
 			s_count = my_puts(va_arg(args, char *));
 			i++;
 			count_c += (s_count - 1);
 
 		}
-		else if (format[i + 1] == '%')
+		else if (format[i] == '%' && format[i + 1] == '%')
 		{
 			my_putc('%');
 		}
