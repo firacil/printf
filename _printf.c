@@ -38,6 +38,7 @@ int _printf(const char *format, ...)
 		}
 		count_c++;
 	}
+	va_end(args);
 
 	return (count_c);
 }
