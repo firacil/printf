@@ -22,7 +22,7 @@ int _printf(const char *format, ...)
 			pr++;
 			format++;
 		}
-		else if (*format == '%')
+		else
 		{
 			format++;
 			pr = selectr(format, args, pr);
