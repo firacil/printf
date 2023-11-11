@@ -28,5 +28,7 @@ int my_puts(char *c)
 		{
 			my_putc(c[i]);
 		}
+	}
+
 	return (i);
 }
