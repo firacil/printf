@@ -10,7 +10,6 @@
 
 int selectr(const char *format, va_list args, int pr)
 {
-	char buf[BUFF_SIZE];
 
 	switch (*format)
 	{
@@ -28,7 +27,7 @@ int selectr(const char *format, va_list args, int pr)
 			break;
 
 		case '%':
-			pr = pr_percent(args, buf, pr, pr, pr, pr);
+			my_putc('%');
 			pr++;
 			break;
 		default:
