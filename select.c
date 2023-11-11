@@ -10,7 +10,7 @@
 
 int selectr(const char *format, va_list args, int pr)
 {
-	switch (*format)
+	switch (*++format)
 	{
 		case 'd':
 		case 'i':
