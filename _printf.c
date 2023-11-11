@@ -40,6 +40,7 @@ int _printf(const char *format, ...)
 		else if (format[i] == '%' && format[i + 1] == '%')
 		{
 			my_putc('%');
+			i++;
 		}
 		count_c += 1;
 	}
