@@ -16,16 +16,19 @@ int my_putc(char c)
  * Return: bytes number counted.
  */
 
-int my_puts(char *c)
+int my_puts(va_list lis)
 {
-	int count_s;
+	char *str;
+	int i;
 
-	if (c)
+	str = va_arg(lis, char *);
+
+	if (str == NULL)
+		str = "(null)";
+	while (str[i])
 	{
-		for (count_s = 0; c[count_s] != '\0'; count_s++)
-		{
-			my_putc(c[count_s]);
-		}
+		my_putc(str[i]);
+		i++;
 	}
 
 	return (count_s);
