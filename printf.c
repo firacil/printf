@@ -19,16 +19,15 @@ int _printf(const char *format, ...)
 
 	while (*format != '\0')
 	{
-		if (*format == '%')
-		{
-			format++;
-			pr = selectr(format, args, pr);
-			format++;
-		}
-		else
+		if (*format != '%')
 		{
 			my_putc(*format);
 			pr++;
+		}
+		else if (*format == '%')
+		{
+			format++;
+			pr = selectr(format, args, pr);
 			format++;
 		}
 	}
