@@ -24,6 +24,7 @@ int _printf(const char *format, ...)
 		if (format[i] != '%')
 		{
 			my_putc(format[i]);
+			i++;
 		}
 
 		else if (format[i + 1] == 'c')
