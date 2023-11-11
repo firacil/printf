@@ -36,9 +36,9 @@ int _printf(const char *format, ...)
 		{
 			my_putc('%');
 		}
-		count_c++;
+		count_c += 1;
 	}
-	va_end(args);
 
+	va_end(args);
 	return (count_c);
 }
