@@ -33,5 +33,6 @@ int selectr(const char *format, va_list args, int pr)
 			break;
 
 	}
+	va_end(args);
 	return (pr);
 }
