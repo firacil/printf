@@ -9,7 +9,7 @@
 
 int my_chr(va_list args, int count)
 {
-	int c = va_arg(args, int);
+	char c = va_arg(args, int);
 
 	my_putc(c);
 	return (count += 1);
