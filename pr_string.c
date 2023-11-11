@@ -11,6 +11,12 @@ int my_str(va_list args, int count)
 {
 	char *s = va_arg(args, char *);
 
+	if (s == NULL)
+	{
+		s = "(null)";
+		return (count);
+	}
+
 	while (*s != '\0')
 	{
 		my_putc(*s);
