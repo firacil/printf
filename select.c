@@ -4,17 +4,17 @@
  * selectr - gives selection specifiers
  * @format: variable argument.
  * @args: retrival of arguments
- * @i: printed charachter count.
+ * @pr: printed charachter count.
  * Return: printed charachter.
  */
 
-int selectr(const char *format, va_list args, int i)
+int selectr(const char *format, va_list args, int pr)
 {
 	switch (*format)
 	{
 		case 'd':
 		case 'i':
-			i = integer(args, i);
+			pr = integer(args, pr);
 			break;
 
 		case 'c':
@@ -22,16 +22,16 @@ int selectr(const char *format, va_list args, int i)
 			i++;
 			break;
 		case 's':
-			i = my_str(args, i);
+			pr = my_str(args, pr);
 			break;
 
 		case '%':
 			my_putc('%');
-			i++;
+			pr++;
 			break;
 		default:
 			break;
 
 	}
-	return (i);
+	return (pr);
 }
