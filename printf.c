@@ -8,11 +8,11 @@
 
 int _printf(const char *format, ...)
 {
-	int i = 0;
+	int pr = 0;
 
 	va_list args;
 
-	if (!format[i] || (format[i + 1] == ' ' && format[i + 2]))
+	if (!format[pr] || (format[pr + 1] == ' ' && format[pr + 2]))
 		return (-1);
 
 	va_start(args, format);
@@ -22,16 +22,16 @@ int _printf(const char *format, ...)
 		if (*format == '%')
 		{
 			format++;
-			i = selectr(format, args, i);
+			pr = selectr(format, args, pr);
 			format++;
 		}
 		else
 		{
 			my_putc(*format);
-			i++;
+			pr++;
 			format++;
 		}
 	}
 	va_end(args);
-	return (i);
+	return (pr);
 }
