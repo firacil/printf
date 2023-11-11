@@ -20,8 +20,6 @@ int my_puts(char *c)
 {
 	int i;
 
-	if (c == NULL)
-		c = "(null)";
 	if (c)
 	{
 		for (i = 0; c[i] != '\0'; c++)
