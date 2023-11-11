@@ -19,7 +19,7 @@ int _printf(const char *format, ...)
 		if (*format != '%')
 		{
 			my_putc(*format);
-			pr++;
+			pr += 1;
 			format++;
 		}
 		else
