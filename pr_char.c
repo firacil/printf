@@ -9,8 +9,9 @@
 
 int my_chr(va_list args)
 {
+	int count;
 	int c = va_arg(args, int);
 
 	my_putc(c);
-	return (1);
+	return (count += 1);
 }
