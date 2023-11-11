@@ -8,7 +8,7 @@
 
 int _printf(const char *format, ...)
 {
-	int i, count_c = 0, s_count = 0;
+	unsigned int i, count_c = 0, s_count = 0;
 
 	va_list args;
 
@@ -29,6 +29,7 @@ int _printf(const char *format, ...)
 		else if (format[i + 1] == 'c')
 		{
 			my_putc(va_arg(args, int));
+			i++;
 		}
 		else if (format[i + 1] == 's')
 		{
