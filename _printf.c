@@ -26,12 +26,12 @@ int _printf(const char *format, ...)
 			my_putc(format[i]);
 		}
 
-		else if (format[i] == '%' && format[i + 1] == 'c')
+		else if (format[i + 1] == 'c')
 		{
 			my_putc(va_arg(args, int));
 			i++;
 		}
-		else if (format[i] == '%' && format[i + 1] == 's')
+		else if (format[i + 1] == 's')
 		{
 			s_count = my_puts(va_arg(args, char *));
 			i++;
