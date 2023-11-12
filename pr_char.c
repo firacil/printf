@@ -12,5 +12,5 @@ int my_chr(va_list args, int count)
 	char c = va_arg(args, int);
 
 	my_putc(c);
-	return (count += 1);
+	return (count++);
 }
