@@ -24,7 +24,6 @@ int selectr(const char *format, va_list args, int pr)
 			break;
 		case 's':
 			pr = my_str(args, pr);
-			pr -= 1;
 			break;
 		case '%':
 			pr_per();

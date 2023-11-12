@@ -17,5 +17,5 @@ int my_str(va_list args, int len)
 		len++;
 		s++;
 	}
-	return (len);
+	return (len - 1);
 }
