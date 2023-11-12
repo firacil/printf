@@ -3,14 +3,13 @@
 /**
  * my_chr - prints char.
  * @args: arguments.
- * @count: byte countee.r
- * Return: print.
+ * Return: print success
  */
 
-int my_chr(va_list args, int count)
+int my_chr(va_list args)
 {
 	char c = va_arg(args, int);
 
 	my_putc(c);
-	return (count++);
+	return (1);
 }

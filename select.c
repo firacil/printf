@@ -19,7 +19,7 @@ int selectr(const char *format, va_list args, int pr)
 			break;
 
 		case 'c':
-			my_putc(va_arg(args, int));
+			my_chr(args);
 			pr++;
 			break;
 		case 's':
