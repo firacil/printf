@@ -11,11 +11,13 @@ int my_str(va_list args, int len)
 {
 	char *s = va_arg(args, char *);
 
+	len = 0;
+
 	while (*s != '\0')
 	{
 		my_putc(*s);
 		len++;
 		s++;
 	}
-	return (len - 1);
+	return (len);
 }
