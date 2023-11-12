@@ -13,6 +13,7 @@ int _printf(const char *format, ...)
 	va_list args;
 
 	va_start(args, format);
+
 	if (format == NULL || (format[pr] == '%' && format[pr + 1] == '\0'))
 		return (-1);
 
@@ -21,8 +22,7 @@ int _printf(const char *format, ...)
 		if (*format != '%')
 		{
 			my_putc(*format);
-			pr += 1;
-			format++;
+			format++
 		}
 		else
 		{
@@ -30,6 +30,7 @@ int _printf(const char *format, ...)
 			pr = selectr(format, args, pr);
 			format++;
 		}
+
 	}
 	va_end(args);
 	return (pr);
