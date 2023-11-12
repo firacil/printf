@@ -10,6 +10,7 @@
 #define BUFF_SIZE 1024
 
 int my_putc(char c);
+int _strlen(char *s);
 int my_str(va_list args, int count);
 int my_chr(va_list args, int count);
 int selectr(const char *format, va_list args, int pr);

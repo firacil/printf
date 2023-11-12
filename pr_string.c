@@ -3,25 +3,29 @@
 /**
  * my_str - prints string.
  * @args: arguments number.
- * @count: counting byt.
+ * @len: counting byt.
  * Return:  character.
  */
 
-int my_str(va_list args, int count)
+int my_str(va_list args, int len)
 {
+	int i;
 	char *s = va_arg(args, char *);
 
 	if (s == NULL)
 	{
 		s = "(null)";
-		return (count);
+		len = _strlen(s);
+		for (i = 0; i < len; i++)
+			my_putc(s[i]);
+		return (len);
 	}
 
-	while (*s != '\0')
+	else
 	{
-		my_putc(*s);
-		count++;
-		s++;
+		len = _strlen(s);
+		for (i = 0; i < len; i++)
+			my_putc(s[i]);
+		return (len);
 	}
-	return (count);
 }
