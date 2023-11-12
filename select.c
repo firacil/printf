@@ -5,7 +5,7 @@
  * @format: variable argument.
  * @args: retrival of arguments
  * @pr: printed charachter count.
- * Return: printed charachter.
+ * Return: return char.
  */
 
 int selectr(const char *format, va_list args, int pr)

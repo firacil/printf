@@ -3,8 +3,8 @@
 /**
  * my_str - prints string.
  * @args: arguments number.
- * @count: counting byte printed.
- * Return: printed charachter.
+ * @count: counting byt.
+ * Return:  character.
  */
 
 int my_str(va_list args, int count)

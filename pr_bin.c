@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * pr_bin - prints a binary number.
- * @num: number arguments.
- * @pr: printed char.
- * Return: printed char.
+ * pr_bin - prints a binary number 0 and 1.
+ * @num: arg num
+ * @pr: print char.
+ * Return: char.
  */
 
 int pr_bin(unsigned int num, int pr)
