@@ -9,23 +9,13 @@
 
 int my_str(va_list args, int len)
 {
-	int i;
 	char *s = va_arg(args, char *);
 
-	if (s == NULL)
+	while (*s != '\0')
 	{
-		s = "(null)";
-		len = _strlen(s);
-		for (i = 0; i < len; i++)
-			my_putc(s[i]);
-		return (len);
+		_myputc(*s);
+		len++
+		s++;		
 	}
-
-	else
-	{
-		len = _strlen(s);
-		for (i = 0; i < len; i++)
-			my_putc(s[i]);
-		return (len);
-	}
+	return (len);
 }
