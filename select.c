@@ -30,6 +30,9 @@ int selectr(const char *format, va_list args, int pr)
 			my_putc('%');
 			pr++;
 			break;
+		case 'b':
+			pr = pr_bin(va_arg(args, unsigned int), pr);
+			break;
 		default:
 			break;
 
