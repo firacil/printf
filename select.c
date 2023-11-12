@@ -20,14 +20,12 @@ int selectr(const char *format, va_list args, int pr)
 
 		case 'c':
 			my_putc(va_arg(args, int));
-			pr++;
 			break;
 		case 's':
 			pr = my_str(args, pr);
 			break;
 		case '%':
 			pr_per();
-			pr++;
 			break;
 		case 'b':
 			pr = pr_bin(va_arg(args, unsigned int), pr);
