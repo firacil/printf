@@ -16,11 +16,11 @@ int _printf(const char *format, ...)
 	if (format == NULL || (format[pr] == '%' && format[pr + 1] == '\0'))
 		return (-1);
 
-	while (*format != '\0')
+	while (format[pr] != '\0')
 	{
 		if (*format != '%')
 		{
-			my_putc(*format);
+			my_putc(format[pr]);
 			pr += 1;
 			format++;
 		}
