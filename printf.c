@@ -8,7 +8,7 @@
 
 int _printf(const char *format, ...)
 {
-	int pr = 0;
+	int pr = 0, i;
 
 	va_list args;
 
@@ -30,6 +30,7 @@ int _printf(const char *format, ...)
 			pr = selectr(format, args, pr);
 			format++;
 		}
+		i++;
 	}
 	va_end(args);
 	return (pr);
