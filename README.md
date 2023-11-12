@@ -6,4 +6,5 @@ printf project
 4. Nothing in fine print is ever good new
 5. My weakness is wearing too much leopard print
 6. The big print gives and the small print takes away
-7. 
+
+   
