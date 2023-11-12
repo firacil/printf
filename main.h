@@ -15,6 +15,7 @@ int my_chr(va_list args, int count);
 int selectr(const char *format, va_list args, int pr);
 int _printf(const char *format, ...);
 int integer(va_list args, int pr);
+int pr_per(void);
 int pr_bin(unsigned int num, int pr);
 int _hex(unsigned int num, int pr, int uc);
 #endif

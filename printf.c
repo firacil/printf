@@ -3,7 +3,7 @@
 /**
  * _printf - produces output according to a format.
  * @format: variable number of argument.
- * Return: always retuen char byte.
+ * Return: always return char byte.
  */
 
 int _printf(const char *format, ...)

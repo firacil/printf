@@ -27,7 +27,7 @@ int selectr(const char *format, va_list args, int pr)
 			break;
 
 		case '%':
-			my_putc('%');
+			pr_per();
 			pr++;
 			break;
 		case 'b':
