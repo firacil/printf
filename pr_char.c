@@ -14,5 +14,5 @@ int my_chr(va_list args, int i)
 	i = 1;
 
 	my_putc(c);
-	return (i);
+	return (i += 1);
 }
