@@ -8,14 +8,12 @@
 
 int _printf(const char *format, ...)
 {
-	unsigned int pr = 0;
+	int pr = 0;
 
 	va_list args;
 
 	va_start(args, format);
-	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
-		return (-1);
-	if (format[i] == NULL)
+	if (format == NULL || (format[pr] == '%' && format[pr + 1] == '\0'))
 		return (-1);
 
 	while (*format != '\0')
