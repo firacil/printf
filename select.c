@@ -20,6 +20,7 @@ int selectr(const char *format, va_list args, int pr)
 
 		case 'c':
 			pr = my_chr(args, pr);
+			pr++;
 			break;
 		case 's':
 			pr = my_str(args, pr);
