@@ -22,7 +22,8 @@ int _printf(const char *format, ...)
 		if (*format != '%')
 		{
 			my_putc(*format);
-			format++
+			pr++;
+			format++;
 		}
 		else
 		{
