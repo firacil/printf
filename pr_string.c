@@ -15,7 +15,7 @@ int my_str(va_list args, int len)
 	{
 		_myputc(*s);
 		len++
-		s++;		
+		s++;
 	}
 	return (len);
 }
