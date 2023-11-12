@@ -20,7 +20,7 @@ int _printf(const char *format, ...)
 	{
 		if (*format != '%')
 		{
-			my_putc(format[pr]);
+			my_putc(*format);
 			pr += 1;
 			format++;
 		}
