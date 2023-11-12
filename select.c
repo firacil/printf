@@ -33,6 +33,10 @@ int selectr(const char *format, va_list args, int pr)
 		case 'b':
 			pr = pr_bin(va_arg(args, unsigned int), pr);
 			break;
+		case 'x':
+		case 'X':
+			pr = _hex(va_arg(args, unsigned int), pr, (*format == 'X') ? 1 : 0);
+			break;
 		default:
 			break;
 
