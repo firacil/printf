@@ -2,7 +2,7 @@
 
 /**
  * integer - prints integer.
- * @args: argument numbers
+ * @args: argument numbers.
  * @pr: charachter printed.
  * Return: character number.
  */
