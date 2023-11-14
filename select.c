@@ -42,5 +42,5 @@ int selectr(const char *format, va_list args, int pr)
 			break;
 
 	}
-	return ('\n');
+	return (pr);
 }
