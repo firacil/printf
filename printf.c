@@ -31,7 +31,6 @@ int _printf(const char *format, ...)
 			pr = selectr(format, args, pr);
 			format++;
 		}
-
 	}
 	va_end(args);
 	return (pr);
