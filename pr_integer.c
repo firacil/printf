@@ -3,8 +3,8 @@
 /**
  * integer - prints integer.
  * @args: argument numbers
- * @pr: charachter printed.
- * Return: character number.
+ * @pr: charachter printed
+ * Return: character number
  */
 
 int integer(va_list args, int pr)
