@@ -42,5 +42,6 @@ int selectr(const char *format, va_list args, int pr)
 			break;
 
 	}
+	my_putc('\n');
 	return (pr);
 }

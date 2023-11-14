@@ -34,6 +34,5 @@ int _printf(const char *format, ...)
 
 	}
 	va_end(args);
-	my_putc('\n');
 	return (pr);
 }
