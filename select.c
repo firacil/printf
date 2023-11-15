@@ -36,6 +36,9 @@ int selectr(const char *format, va_list args, int pr)
 		case 'X':
 			pr = _hex(va_arg(args, unsigned int), pr, (*format == 'X') ? 1 : 0);
 			break;
+		case 'r':
+			pr = pr_rev(args, pr);
+			break;
 		default:
 			my_putc(37);
 			my_putc(*format);
