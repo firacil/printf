@@ -13,10 +13,10 @@ int selectr(const char *format, va_list args, int pr)
 
 	switch (*format)
 	{
-		/*case 'd':
+		case 'd':
 		case 'i':
 			pr = integer(args, pr);
-			break;*/
+			break;
 
 		case 'c':
 			my_putc(va_arg(args, int));
