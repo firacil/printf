@@ -9,6 +9,5 @@ int pr_per(void)
 {
 	my_putc(37);
 
-	return (0);
-	
+	return (1);	
 }
